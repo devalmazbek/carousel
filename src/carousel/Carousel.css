@@ -1,0 +1,33 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel .left,
+.carousel .right {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  z-index: 1;
+}
+
+.carousel .right {
+  right: 30px;
+}
+
+.carousel .left span,
+.carousel .right span {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.carousel .left span:hover,
+.carousel .right span:hover {
+  color: aqua;
+}

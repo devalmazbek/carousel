@@ -1,0 +1,9 @@
+.dot {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: inherit;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}

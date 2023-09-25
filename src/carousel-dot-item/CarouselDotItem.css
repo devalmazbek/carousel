@@ -1,0 +1,18 @@
+.dot-item {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 15%;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.dot-item:hover {
+  background-color: cadetblue;
+}
+
+.dot-item.active {
+  background-color: cadetblue;
+}

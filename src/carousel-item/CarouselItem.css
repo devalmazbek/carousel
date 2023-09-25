@@ -1,6 +1,7 @@
 .carousel_item {
   flex-grow: 1;
   background-image: cover;
+  background-position: center center;
   min-height: 600px;
   max-height: 600px;
   color: #fff;
@@ -22,6 +23,7 @@
 .carousel_item p {
   font-size: 1.3rem;
   margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 @keyframes slide {

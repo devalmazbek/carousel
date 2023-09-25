@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CarouselItem from "../carousel-item/CarouselItem";
 
 import { data } from "../data";
 import "./Carousel.css";
+import CarouselDot from "../carousel-dot/CarouselDot";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,6 +29,10 @@ function Carousel() {
     });
   };
 
+  const handleDot = (id) => {
+    setCurrentIndex(id);
+  };
+
   return (
     <div className="carousel">
       <div className="left">
@@ -35,12 +40,17 @@ function Carousel() {
           <i className="fa-solid fa-arrow-left"></i>
         </span>
       </div>
-      <CarouselItem item={item[currentIndex]} />
+      <CarouselItem item={item[currentIndex]} key={item.id} />
       <div className="right">
         <span onClick={handelNextSlide}>
           <i className="fa-solid fa-arrow-right"></i>
         </span>
       </div>
+      <CarouselDot
+        data={data}
+        onSelect={handleDot}
+        currentIndex={currentIndex}
+      />
     </div>
   );
 }

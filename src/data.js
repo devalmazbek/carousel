@@ -1,20 +1,20 @@
 export const data = [
   {
-    id: 1,
+    id: 0,
     title: "First slide label",
     description:
       "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     image: "https://wallpaperaccess.com/full/2461288.jpg",
   },
   {
-    id: 2,
+    id: 1,
     title: "second slide label",
     description:
       "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     image: "https://wallpaperaccess.com/full/2461290.jpg",
   },
   {
-    id: 3,
+    id: 2,
     title: "third slide label",
     description:
       "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
